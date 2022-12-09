@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+    stationery_shop_redis:
+        image: redis:alpine
+        hostname: redis
+        ports:
+            - "50002:6379"
+        volumes:
+            - "redis_data:/data/"
+
+volumes:
+    redis_data:
