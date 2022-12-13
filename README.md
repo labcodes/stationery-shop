@@ -10,13 +10,13 @@ This project was built using Django and React. Django serves both the frontend a
 
 ## Setup
 
-First, to install our dependencies, we require:
+Go ahead and make sure you have all of them and install the missing dependencies, in order to setup this project we require:
 
-- wget
 - make
-- python>=3.6
-- [poetry](https://python-poetry.org)
-- nodejs>=8.10
+- [python>=3.6](https://www.python.org/downloads/)
+- [poetry>=1.2.2](https://github.com/python-poetry/install.python-poetry.org)
+- [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [nodejs>=8.10](https://nodejs.org/pt-br/)
 
 On Ubuntu>=18.04, you also need:
 
@@ -27,11 +27,11 @@ To get it up, clone the project, then copy the `.env.example` file to `.env`, so
 
 ## Running it
 
-After installing, when you want to run the project locally, be sure to have your virtualenv active (running `poetry shell` from the project folder) and nvm set to the correct node version (by running `nvm use` on the project folder). If nvm is not found, try restarting your terminal or running `make setup_node_environment` manually.
+After installing, when you want to run the project locally, be sure to have your virtualenv active (running `poetry shell` from the project folder) and nvm set to the correct node version (by running `nvm use` on the project folder). If nvm is not found, try restarting your terminal or reading through the installation step for NVM: <https://github.com/nvm-sh/nvm#installing-and-updating>
 
-Since nvm can be a little fiddly, if you have any issues with it, [try reading their documentation](https://github.com/nvm-sh/nvm#installing-and-updating) on how to use it.
+Since nvm can be a little fiddly, if you have any issues with it, [try reading their documentation](https://github.com/nvm-sh/nvm) on how to use it.
 
-For development purposes, the database engine used in this project is sqlite. So before running the server, migrate and load stub data on the database with:
+For development purposes, the database engine used in this project is SQlite. So before running the servers, you will need to migrate and load stub data on the database by running:
 
 ```sh
 $ make migrate
