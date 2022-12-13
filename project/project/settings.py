@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
-# If you're not using this project on heroku, comment the following lines
-import django_heroku
 import dj_database_url
 from decouple import config
 
@@ -127,9 +125,7 @@ VITE_APP_DIR = os.path.join(BASE_DIR, "react-app")
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATICFILES_STORAGE = config(
-    "STATICFILES_STORAGE", default="whitenoise.django.GzipManifestStaticFilesStorage"
-)
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static/"),
@@ -170,8 +166,6 @@ PWA_APP_SPLASH_SCREEN = [
 PWA_APP_DIR = "ltr"
 PWA_APP_LANG = "en-US"
 
-# If you're not using this project on heroku, comment the following lines
-django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
