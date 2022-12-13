@@ -13,10 +13,10 @@ This project was built using Django and React. Django serves both the frontend a
 Go ahead and make sure you have all of them and install the missing dependencies, in order to setup this project we require:
 
 - make
-- [python>=3.6](https://www.python.org/downloads/)
-- [poetry>=1.2.2](https://github.com/python-poetry/install.python-poetry.org)
+- [python >= 3.6](https://www.python.org/downloads/)
+- [poetry >= 1.2.2](https://github.com/python-poetry/install.python-poetry.org)
 - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-- [nodejs>=8.10](https://nodejs.org/pt-br/)
+- [nodejs >= 18](https://nodejs.org/pt-br/)
 
 On Ubuntu>=18.04, you also need:
 
