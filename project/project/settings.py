@@ -115,7 +115,7 @@ USE_TZ = True
 INTERNAL_IPS = ["127.0.0.1"]
 
 # Vite App Dir: point it to the folder your vite app is in.
-VITE_APP_DIR = os.path.join(BASE_DIR, "react-app")
+VITE_APP_DIR = os.path.join(BASE_DIR, "../react-app")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -128,7 +128,7 @@ VITE_APP_DIR = os.path.join(BASE_DIR, "react-app")
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static/"),
+    os.path.join(BASE_DIR, "static"),
     os.path.join(VITE_APP_DIR, "dist"),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
@@ -146,7 +146,7 @@ RQ_QUEUES = {
 
 # PWA configuration
 
-PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, "react-app/dist/sw.js")
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, "../react-app/dist/sw.js")
 PWA_APP_NAME = "DRW - Change me!"
 PWA_APP_DESCRIPTION = "DRW - Change me!"
 PWA_APP_THEME_COLOR = "#0A0302"
